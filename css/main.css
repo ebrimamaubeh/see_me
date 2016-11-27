@@ -1,0 +1,418 @@
+/*reset*/
+
+*, *:before, *:after { 
+   -webkit-box-sizing: border-box; 
+   -moz-box-sizing:    border-box; 
+   box-sizing:         border-box; 
+}
+
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, img, blockquote, ol, ul, li, form, fieldset, legend, label, table, header, footer, nav, section, figure {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*typo*/
+body {
+	font-size: 1em;
+	font-family: Georgia, Arial;
+	color: #444;
+	line-height: 1.5;
+	background-color: #efefef;
+
+}
+
+
+/*layout*/
+.container {
+	width: 1000px;
+	margin: 0 auto 0 auto;	
+}
+
+img	 {
+
+ 	max-width: 100%;
+}
+
+ul {
+	list-style-type: none;
+}
+
+
+/*header*/
+.header {
+	padding: 1em 0 1em 0;
+	background-color: #4b545f; 
+	
+}
+
+.logo {
+
+	text-decoration: none;
+	margin-bottom: 1em;
+	display: block; /* margin was working */
+}
+
+
+/*nav*/
+.nav {
+	/*background-color: black;
+	overflow: hidden;*/
+	/*margin-top: 1em;*/
+	margin-left: 10em;
+
+	
+}
+
+
+.nav li {
+	/*float: left;
+
+}
+
+.nav a {
+	/*color: white;
+	text-decoration: none;
+	display: block;
+	padding: .5em 1em;
+	border-right: 1px solid white;*/
+}
+
+nav ul ul {
+	display: none;
+}
+nav ul li:hover > ul 
+{
+		display: block;
+}
+nav ul
+ {
+ 	
+	background: #efefef; 
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+}
+nav ul:after 
+{
+	content: ""; clear: both; display: block;
+}
+nav ul li {
+	float: left;
+
+}
+nav ul li:hover 
+{
+	background: #4b545f;
+	background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+	background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+}
+nav ul li:hover a 
+{
+	color: #fff;
+}	
+nav ul li a 
+{
+	display: block; padding: 25px 40px;
+	color: #757575; text-decoration: none;
+}
+nav ul ul 
+{
+	background: #5f6975; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+nav ul ul li 
+{
+	float: none; 
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+}
+nav ul ul li a 
+{
+	padding: 15px 40px;
+	color: #fff;
+}	
+nav ul ul li a:hover 
+{
+	background: #4b545f;
+}
+nav ul ul ul
+{
+	position: absolute; left: 100%; top:0;
+
+}
+
+
+/*featured*/
+.featured {
+
+}
+
+.featured img {
+}
+ #efefef
+/*main*/
+
+.main {
+	overflow: hidden;
+	margin: 1.5em 0;
+	min-height: 30em;
+}
+
+
+.content {
+	float: left;
+	width: 60%;
+	padding-right: 5%;
+	background-color:  #efefef;
+	min-height: 30em;
+	padding-left: 5%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.aside{
+	float: left;
+	padding-right: 5%;
+	width: 20%;
+	background-color: #efefef;
+	min-height: 30em;
+	/*border-right: solid;f*/
+
+
+}
+
+.aside ul li{
+	margin: 1em;
+}
+
+
+.sidebar{
+	float: right;
+	width: 20%;
+	background-color: blue;
+	min-height: 30em;
+}
+.sidebar h1{
+	font-size: 20px;
+}
+
+h1{
+	text-align: center;
+	font-size: 25px;
+}
+
+
+/*footer*/
+
+.footer{
+	background-color: #666666;
+}
+
+/*about*/
+
+/*services*/
+
+/*ousainou*/
+.find{
+	
+	height: 70px;
+}
+.appname{
+	text-align: center;
+	font-family: serif;
+	font-size: 20px;
+	color: #efefef;
+}
+.appname button{
+	float: right;
+	margin-bottom: 1em;
+}
+
+.featured{
+	background: red;
+}
+
+#search_text{
+	height: 40px;
+	width: 220px;
+	font-size: 15px;
+}
+
+@media screen and (max-width:1180px){
+
+
+}
+@media screen and (max-width:1025px){
+
+.nav ul li{
+	font-size: 65%;
+}
+.header{
+	width: 90%;
+}
+
+.nav{
+	width: 75%;
+}
+
+.sidebar h1{
+	font-size: 100%;
+}
+
+
+}
+
+
+@media screen and (max-width:960px){
+
+	.sidebar h1{
+	font-size: 75%;
+}
+	
+}
+
+@media screen and (max-width:890px){
+
+	.header{
+		width: 70%;
+	}
+	.featured{
+		height: 18%;
+		width:12%;
+		image
+	}
+	nav ul li a 
+	{
+	 padding: 15px 25px;
+	}
+
+	}
+
+@media screen and (max-width:703px){
+
+	.header{
+		width: 60%;
+	}
+
+	nav ul li a 
+	{
+	 padding: 15px 18px;
+	}
+
+}
+
+@media screen and (max-width:650px){
+	.aside ul li a{
+	font-size: 70%;	
+}
+
+#search_text{
+	height: 25px;
+	width: 150px;
+	font-size: 70%;
+}
+nav ul li a 
+{
+	 padding: 15px 18px;
+}
+}
+
+@media screen and (max-width:601px){
+
+	/*.aside {
+		display: inline;
+		background: red;
+		width:1000px;
+		height: 100px;
+		float: none;  
+
+	}
+	.messages ul li{
+	}*/
+
+	.header{
+		width:500px;
+	}
+
+	nav ul li a {
+	 padding: 5px 9px;
+}
+
+nav ul
+{
+	
+}
+
+@media screen and (max-width:500px){
+
+	.header{
+		width: 365px;
+	}
+	nav ul li a 
+{
+	 padding: 13px 0px;
+}
+
+
+}
+
+@media screen and (max-width: 340px){
+
+	.header{
+		width: 341px;
+	}
+
+	
+nav ul li a {
+	
+	padding: 2px 5px;
+	width: 110px;
+
+}
+.content{
+	width: 70%;
+}
+
+.aside{
+	width: 110px;
+	border-right: inset;
+
+}
+#search_text{
+	height: 20px;
+	width: 100px;
+	font-size: 70%;
+}
+
+.appname button{
+	
+	
+	width: 45px;
+	height: 25px;
+	font-size: 10px;
+}
+}

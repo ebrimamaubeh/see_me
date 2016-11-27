@@ -1,0 +1,21 @@
+html, body
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#messages
+{
+	width: 300px;
+	height: 200px;
+	margin: auto;
+	padding: 5px;
+	border: 1px solid #ccc;
+	overflow: auto;
+}
+
+#input
+{
+	margin: 10px;
+}
+

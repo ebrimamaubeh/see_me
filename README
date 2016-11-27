@@ -1,0 +1,9 @@
+The message is now working correctly.
+
+
+N0W: Am comming to allow to user to send messages to other users and friends.	but also if you are ready provide the temp table for users to select feiends.
+
+Later: later you should users to send friend request instead of adding friends directly.
+
+
+1) Now: I want to use the temp table to allow users to select friends. The selected friends will be saved to the users friends table permanently , and the selected friend will be deleted from the temp table so that the user will not select them as friends again.

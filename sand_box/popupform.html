@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The html for the pop up.</title>
+	<script type="text/javascript" src="my_js.js"></script>
+</head>
+
+<body id = "body" style="overflow: hidden;">
+<div id = "the_div">
+
+<div id = "popupContact">
+
+<form action = "#" method = "post" name = "form" id = "form">
+<img src="Screenshot2.png" id = "close" onclick="div_hide()">
+
+<h2>Contact us</h2>
+
+<input type = "text" name = "name" id = "name" placeholder="Name" />	
+<input type = "text" name = "email" placeholder = "email" id  = "email"/>
+
+<textarea id = "msg" name = "message" placeholder = "Your Message."></textarea>
+
+
+<a href="javascript:%20check_empty()" id = "submit">Send</a>	
+
+
+</form>
+	
+
+</div>
+
+</div>
+
+
+<h2>Click this button to popup using javascript.</h2>
+
+<button id = "popup" onclick="div_show()">Popup</button>
+
+</body>
+</html>

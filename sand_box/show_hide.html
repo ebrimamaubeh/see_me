@@ -1,0 +1,28 @@
+    <script type="text/javascript">
+    <!--
+    function showhide(what,obj) {
+    // alert(what);
+    if(what != "1") {
+     
+    obj1 = document.getElementById(obj);
+    obj1.style.display = '';
+    } else {
+         obj1 = document.getElementById(obj);
+       obj1.style.display = 'none';
+    }
+    }
+    function hide(obj) {
+    // alert(obj);
+    obj1 = document.getElementById(obj);
+    obj1.style.display = 'none';
+    }
+    //-->
+    </script>
+     
+    <!-- HTML form element that triggers toggle -->
+     
+    <input class="inputbox" type="radio" name="option" value="1" onchange="showhide(this.value,'toggle')" />Option 1<br/>
+     
+    <!-- HTML element that toggles -->
+     
+    <div id="toggle">This content will only be shown if option one is chosen</div>

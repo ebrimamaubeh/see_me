@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pop ups.</title>
+</head>
+<body>
+
+<A
+   HREF="popupbasic.html" 
+   onClick="return popup(this, 'notes')">my popup</A>
+
+
+<SCRIPT TYPE="text/javascript">
+<!--
+function popup(mylink, windowname)
+{
+	if (!window.focus)
+		return true;
+
+	var href;
+
+	if (typeof(mylink) == 'string')
+	   href=mylink;
+	else
+	   href=mylink.href;
+
+	window.open(href, windowname, 'width=400,height=200,scrollbars=yes');
+
+	return false;// cancel the clink on the link, prevent the current window from 
+	//navigating to the link.
+}
+//-->
+</SCRIPT>
+
+</body>
+</html>
